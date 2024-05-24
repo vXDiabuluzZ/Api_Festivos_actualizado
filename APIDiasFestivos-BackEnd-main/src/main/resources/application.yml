@@ -1,0 +1,24 @@
+# Server properties
+server:
+  servlet:
+    context-path: /festivos
+  port: 8080
+
+# Spring properties
+spring:
+  application:
+    name: ApiDiasFestivos
+  
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Festivos
+    username: postgres
+    password: root
+    driverClassName: org.postgresql.Driver
+  
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+        ddl-auto: update #Mantiene la base de datos actualizada, conforme a las entidades
+        
